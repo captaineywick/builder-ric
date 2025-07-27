@@ -4,7 +4,6 @@ version = "1.0.0a1"
 description = "CLI to generate project structures."
 authors = [{ name = "Eric", email = "ericdaria16@gmail.com" }]
 readme = "README.md"
-license = { file = "LICENSE" }
 keywords = ["cli", "project-generator", "scaffold"]
 requires-python = ">=3.10.7"
 dependencies = []
@@ -27,3 +26,12 @@ dev = [
   "build==1.2.2.post1",
   "twine==6.1.0"
 ]
+
+[project.license]
+text = "MIT"
+
+[tool.setuptools]
+package-dir = {"" = "app"}
+
+[tool.setuptools.packages.find]
+where = ["app"]
