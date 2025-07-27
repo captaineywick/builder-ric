@@ -1,6 +1,6 @@
 [project]
 name = "builder-ric"
-version = "1.0.0"
+version = "1.0.0a1"
 description = "CLI to generate project structures."
 authors = [{ name = "Eric", email = "ericdaria16@gmail.com" }]
 readme = "README.md"
@@ -8,6 +8,10 @@ license = { file = "LICENSE" }
 keywords = ["cli", "project-generator", "scaffold"]
 requires-python = ">=3.10.7"
 dependencies = []
+classifiers = [
+    "Development Status :: 3 - Alpha",  # 1=Planning, 2=Pre-Alpha, 3=Alpha, 4=Beta, 5=Production
+    "Programming Language :: Python :: 3",
+]
 
 [project.scripts]
 ric = "app.presentation.cli.cli:main"
