@@ -16,12 +16,6 @@ classifiers = [
 [project.scripts]
 ric = "app.presentation.cli.cli:main"
 
-[project.optional-dependencies]
-dev = [
-  "pytest>=8.4.1",
-  "pytest-cov>=6.2.1",
-]
-
 [build-system]
 requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
@@ -30,6 +24,6 @@ build-backend = "setuptools.build_meta"
 dev = [
   "pytest>=8.4.1",
   "pytest-cov>=6.2.1",
-  "build",
-  "twine"
+  "build==1.2.2.post1",
+  "twine==6.1.0"
 ]
