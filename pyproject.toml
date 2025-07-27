@@ -4,6 +4,8 @@ version = "1.0.0"
 description = "CLI to generate project structures."
 authors = [{ name = "Eric", email = "ericdaria16@gmail.com" }]
 readme = "README.md"
+license = { file = "LICENSE" }
+keywords = ["cli", "project-generator", "scaffold"]
 requires-python = ">=3.10.7"
 dependencies = []
 
@@ -19,3 +21,11 @@ dev = [
 [build-system]
 requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.4.1",
+  "pytest-cov>=6.2.1",
+  "build",
+  "twine"
+]
