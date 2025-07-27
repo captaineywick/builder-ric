@@ -8,7 +8,7 @@ requires-python = ">=3.10.7"
 dependencies = []
 
 [project.scripts]
-ric = "app.presentation.cli:main"
+ric = "app.presentation.cli.cli:main"
 
 [project.optional-dependencies]
 dev = [
